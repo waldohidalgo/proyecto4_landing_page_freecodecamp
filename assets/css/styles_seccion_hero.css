@@ -5,6 +5,7 @@ Estilos hero section
   position: relative;
   height: 65vh;
   background-image: url("../img/hero_image.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }

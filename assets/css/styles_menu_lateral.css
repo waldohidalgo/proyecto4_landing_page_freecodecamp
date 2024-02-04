@@ -1,5 +1,6 @@
 .menu_lateral {
   position: fixed;
+  overflow-y: auto;
   top: 0;
   left: calc(-70vw - 20rem);
   z-index: 1;

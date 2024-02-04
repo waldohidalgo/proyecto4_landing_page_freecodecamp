@@ -5,7 +5,7 @@ Estilos hero section
   position: relative;
   height: 65vh;
   background-image: url("../img/hero_image.jpg");
-
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   @media screen and (min-width: 768px) {

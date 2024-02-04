@@ -6,7 +6,7 @@ EL proyecto ha sido creado utilizando:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-No se ha utilizado ninguna librería.
+No se ha utilizado ninguna librería de componentes.
 
 El proyecto requiere crear una Landing Page cumpliendo una serie de requisitos y tests a superar una vez creado el proyecto. Dichos requisitos y tests son los siguientes:
 

@@ -1,0 +1,60 @@
+.menu_lateral .contenedor_boton {
+  position: relative;
+  margin-block: 1rem;
+}
+
+.menu_lateral_close {
+  position: relative;
+  z-index: 1;
+  border: 2px solid #34495e;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_lateral_close span {
+  color: black;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-contenido);
+}
+
+.menu_lateral_close:hover {
+  span {
+    color: white;
+  }
+}
+/*
+Pseudo Elementos
+*/
+.menu_lateral_close:before,
+.menu_lateral_close:after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0%;
+  background-color: #34495e;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_lateral_close:after {
+  left: 100%;
+}
+
+.menu_lateral_close:hover:before {
+  width: 50%;
+  left: 0;
+}
+
+.menu_lateral_close:hover:after {
+  width: 50%;
+  left: 50%;
+}

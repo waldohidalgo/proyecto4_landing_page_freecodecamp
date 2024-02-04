@@ -1,0 +1,115 @@
+footer {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: auto 1fr;
+    gap: 0;
+  }
+  .link_index_footer {
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+  }
+}
+.footer_contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1rem;
+  row-gap: 10px;
+  text-align: center;
+  font-family: var(--font-titulos);
+  p {
+    line-height: 1.5rem;
+  }
+  .contenedor_redes {
+    img {
+      width: 40px;
+    }
+  }
+  .atribucion {
+    font-size: 0.8rem;
+    a {
+      color: orange;
+    }
+  }
+}
+
+/*
+Tooltip sobre mi nombre
+*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  span {
+    display: block;
+  }
+  .tooltiptext_titulo {
+    border-radius: 6px 6px 0 0;
+    padding-block: 10px;
+    font-weight: 700;
+    border: 3px ridge orangered;
+
+    border-bottom: 0;
+  }
+  .tooltiptext_contenido {
+    border-radius: 0 0 6px 6px;
+    padding-block: 10px;
+    border: 3px solid green;
+    padding-inline: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+  }
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  color: black;
+  text-align: center;
+
+  border-radius: 6px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 170%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: green transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

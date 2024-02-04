@@ -1,0 +1,78 @@
+.menu_lateral {
+  position: fixed;
+  top: 0;
+  left: calc(-70vw - 20rem);
+  z-index: 1;
+  width: 70vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: left 0.5s ease-in-out;
+  @media screen and (min-width: 390px) {
+    left: calc(-60vw - 20rem);
+    width: 60vw;
+  }
+}
+.active {
+  left: 0 !important;
+}
+
+.contenedor {
+  background-color: white;
+  color: black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.menu_lateral .contenedor .menu_lateral_close {
+  cursor: pointer;
+}
+
+/*
+Estilos etiquetas dentro de menu lateral
+*/
+.menu_lateral {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  .contenedor {
+    ul {
+      justify-self: stretch;
+    }
+    h2 {
+      margin-block: 1rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      font-family: var(--font-titulos);
+      text-decoration: underline;
+    }
+    li {
+      padding-block: 1rem;
+      font-size: 15px;
+      font-family: var(--font-contenido);
+      cursor: pointer;
+      .contenido {
+        width: fit-content;
+        margin-inline: auto;
+      }
+    }
+    li:hover {
+      outline: 1px solid black;
+
+      .efecto_subrayado {
+        width: 100%;
+      }
+    }
+
+    .efecto_subrayado {
+      height: 5px;
+      width: 0px;
+      background-color: blue;
+      transition: width 0.5s ease-in-out;
+    }
+  }
+}
